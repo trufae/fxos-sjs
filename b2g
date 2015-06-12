@@ -1,0 +1,10 @@
+#!/system/bin/sh
+WWWROOT=/data/local/tmp/www
+(
+	while : ; do
+		/system/b2g/jx /data/local/tmp/www/index.js
+		sleep 1
+	done
+) &
+
+/system/b2g/b2g.orig
